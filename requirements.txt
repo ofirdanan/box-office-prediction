@@ -1,0 +1,8 @@
+xgboost==0.90
+numpy==1.16.0
+pandas==0.23.4
+bs4==0.0.1
+vaderSentiment==3.3.1
+matplotlib==3.0.1
+scikit-learn==0.22
+nltk==3.4.5
