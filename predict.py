@@ -11,6 +11,7 @@ from sklearn.preprocessing import MultiLabelBinarizer
 import nltk
 from nltk.corpus import stopwords
 nltk.download('stopwords')
+nltk.download('punkt')
 from nltk.tokenize import word_tokenize
 from sklearn.impute import KNNImputer
 import pickle
@@ -259,7 +260,6 @@ clf = pickle.load(open('model.pkl', 'rb'))
 x_test = data_impu.drop(columns = ['revenue', 'log_revenue'])
 y_test = data_impu['log_revenue']
 y_pred_test = clf.predict(x_test)
-rmsle(np.expm1(y_test), np.expm1(y_pred_test))
 
 prediction_df = pd.DataFrame(columns=['id', 'revenue'])
 prediction_df['id'] = data_id
