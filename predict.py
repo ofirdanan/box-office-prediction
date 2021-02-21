@@ -1,7 +1,6 @@
 import argparse
 import numpy as np
 import pandas as pd
-import argparse
 import datetime
 import operator
 import json, requests
